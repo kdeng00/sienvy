@@ -11,52 +11,52 @@ on:
 jobs:
   check:
     name: Check
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.94
+          toolchain: 1.95
       - run: cargo check
 
   test:
     name: Test Suite
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.94
+          toolchain: 1.95
       - run: cargo test
 
   fmt:
     name: Rustfmt
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.94
+          toolchain: 1.95
       - run: rustup component add rustfmt
       - run: cargo fmt --all -- --check
 
   clippy:
     name: Clippy
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.94
+          toolchain: 1.95
       - run: rustup component add clippy
       - run: cargo clippy -- -D warnings
 
   build:
     name: build
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.94
+          toolchain: 1.95
       - run: cargo build
