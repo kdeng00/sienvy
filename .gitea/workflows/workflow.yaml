@@ -11,7 +11,7 @@ on:
 jobs:
   check:
     name: Check
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
@@ -20,7 +20,7 @@ jobs:
 
   test:
     name: Test Suite
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
@@ -29,7 +29,7 @@ jobs:
 
   fmt:
     name: Rustfmt
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
@@ -39,7 +39,7 @@ jobs:
 
   clippy:
     name: Clippy
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
@@ -49,7 +49,7 @@ jobs:
 
   build:
     name: build
-    runs-on: debian-13
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
         with:
