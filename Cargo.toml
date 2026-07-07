@@ -9,4 +9,3 @@ dotenvy = { version = "0.15.7" }
 const_format = { version = "0.2.36" }
 
 [dev-dependencies]
-async-std = { version = "1.13.2" }
