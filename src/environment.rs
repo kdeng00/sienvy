@@ -40,7 +40,7 @@ pub fn get_root_directory() -> crate::EnvVar {
 
 pub fn get_icarus_base_api_url() -> crate::EnvVar {
     dotenvy::dotenv().ok();
-    let key = crate::keys::ICARUS_BASE_API_URL;
+    let key = crate::keys::SOARICARUS_BASE_API_URL;
     let value = std::env::var(key).expect(key);
 
     crate::init_envvar(key, &value)
@@ -48,7 +48,7 @@ pub fn get_icarus_base_api_url() -> crate::EnvVar {
 
 pub fn get_icarus_auth_base_api_url() -> crate::EnvVar {
     dotenvy::dotenv().ok();
-    let key = crate::keys::ICARUS_AUTH_BASE_API_URL;
+    let key = crate::keys::SOARICARUS_AUTH_BASE_API_URL;
     let value = std::env::var(key).expect(key);
 
     crate::init_envvar(key, &value)

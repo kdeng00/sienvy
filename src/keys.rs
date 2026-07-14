@@ -2,7 +2,7 @@
 pub const DB_URL: &str = "DATABASE_URL";
 
 /// Environment key for secret main key
-/// Used for the icarus app
+/// Used for the soaricarus app
 pub const SECRET_MAIN_KEY: &str = "SECRET_MAIN_KEY";
 
 /// Environment key for service logins
@@ -12,14 +12,14 @@ pub const SERVICE_PASSPHRASE: &str = "SERVICE_PASSPHRASE";
 /// Generic use of secret key that could be found in various apps
 pub const SECRET_KEY: &str = "SECRET_KEY";
 
-/// Environment key for root directory for the icarus app
+/// Environment key for root directory for the soaricarus app
 pub const ROOT_DIRECTORY: &str = "ROOT_DIRECTORY";
 
-/// Environment key for icarus api url
-pub const ICARUS_BASE_API_URL: &str = "ICARUS_BASE_API_URL";
+/// Environment key for soaricarus api url
+pub const SOARICARUS_BASE_API_URL: &str = "SOARICARUS_BASE_API_URL";
 
-/// Environment key for icarus auth api url
-pub const ICARUS_AUTH_BASE_API_URL: &str = "ICARUS_AUTH_BASE_API_URL";
+/// Environment key for soaricarus auth api url
+pub const SOARICARUS_AUTH_BASE_API_URL: &str = "SOARICARUS_AUTH_BASE_API_URL";
 
 /// Environment key for App status
 pub const APP_ENV: &str = "APP_ENV";
@@ -41,9 +41,9 @@ pub mod error {
     pub const SERVICE_LOGIN: &str = concatcp!(super::SERVICE_PASSPHRASE, " ", GENERAL_ERROR);
     pub const SECRET_KEY: &str = concatcp!(super::SECRET_KEY, " ", GENERAL_ERROR);
     pub const ROOT_DIRECTORY: &str = concatcp!(super::ROOT_DIRECTORY, " ", GENERAL_ERROR);
-    pub const ICARUS_BASE_API_URL: &str = concatcp!(super::ICARUS_BASE_API_URL, " ", GENERAL_ERROR);
-    pub const ICARUS_AUTH_BASE_API_URL: &str =
-        concatcp!(super::ICARUS_AUTH_BASE_API_URL, " ", GENERAL_ERROR);
+    pub const SOARICARUS_BASE_API_URL: &str = concatcp!(super::SOARICARUS_BASE_API_URL, " ", GENERAL_ERROR);
+    pub const SOARICARUS_AUTH_BASE_API_URL: &str =
+        concatcp!(super::SOARICARUS_AUTH_BASE_API_URL, " ", GENERAL_ERROR);
     pub const APP_ENV: &str = concatcp!(super::APP_ENV, " ", GENERAL_ERROR);
     pub const BACKEND_PORT: &str = concatcp!(super::BACKEND_PORT, " ", GENERAL_ERROR);
     pub const FRONTEND_URL: &str = concatcp!(super::FRONTEND_URL, " ", GENERAL_ERROR);
