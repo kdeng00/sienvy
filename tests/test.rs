@@ -51,11 +51,11 @@ mod tests {
     }
 
     #[test]
-    fn test_get_icarus_base_api_url() {
-        let result = sienvy::environment::get_icarus_base_api_url();
+    fn test_get_soaricarus_base_api_url() {
+        let result = sienvy::environment::get_soaricarus_base_api_url();
         assert_eq!(
-            result.value, "https://icarus.com",
-            "ICARUS_BASE_API_URL does not match {:?}",
+            result.value, "https://soaricarus.com",
+            "SOARICARUS_BASE_API_URL does not match {:?}",
             result
         )
     }
