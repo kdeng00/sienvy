@@ -1,6 +1,6 @@
 [package]
 name = "sienvy"
-version = "0.8.2"
+version = "0.8.3"
 edition = "2024"
 description = "Library to interact with environment variables of soaricarus"
 license = "MIT"
